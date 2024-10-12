@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +9,22 @@
             background-color: black;
             color: white;
             font-family: Arial, sans-serif;
+            text-align: center; /* Centering the text */
         }
         nav a {
             margin-right: 15px;
+            color: white; /* Ensure the links are visible */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+        }
+        nav a:hover {
+            color: #FFD700; /* Change the color on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+        img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            margin: 20px 0; /* Add some space around the image */
         }
     </style>
 </head>
@@ -27,9 +39,12 @@
       this alternative reality disappears, and you will leave emptyhanded. You find yourself in an appartment. Puzzles are hidden around this
       and other rooms. You have to solve the puzzles in order to continue to the next phases. Feel free to explore. However, time is ticking;
       you may want to coordinate with your peers, and split up into teams to solve puzzles quicker..."
-
-      Where do you want to go?
     </p>
+    
+    <img src="https://images.pexels.com/photos/7045941/pexels-photo-7045941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Living Room" />
+    
+    <p>Where do you want to go?</p>
+    
     <nav>
         <a href="green_couch.html">Green couch</a>
         <a href="white_couch.html">White couch</a>
