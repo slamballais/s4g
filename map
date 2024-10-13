@@ -1,24 +1,26 @@
 * living room -->
-  - green couch --> virginica --> 
-  - white couch
-  - lamp
-  - television --> ring -->
-  - fireplace --> deoxyribonucleicacid -->
-  - door --> [ELEVATOR]
+  - green couch        --> virginica            --> XXX --> [A-KEY 3]
+  - white couch        --> XXX                  --> XXX --> [A-KEY 2]
+  - lamp               --> XXX                  --> XXX --> [A INSTRUCTIONS: ]
+  - television         --> ring                 --> XXX --> [A-KEY 1]
+  - fireplace          --> deoxyribonucleicacid --> XXX --> [A-KEY 4]
+  - door               --> [[ELEVATOR]]
 
 * kitchen -->
-  - pantry
-  - kitchen drawer
-  - oven
-  - plant
-  - fire alarm
-  - kitchen machine
+  - pantry             --> XXX                  --> XXX --> [B-KEY 1]
+  - kitchen drawer     --> XXX                  --> XXX --> [B-KEY 3]
+  - oven               --> XXX                  --> XXX --> [B-KEY 4]
+  - plant              --> XXX                  --> XXX --> [B INSTRUCTIONS: ]
+  - fire alarm         --> XXX                  --> XXX --> [B-KEY 2]
+  - kitchen machine    --> XXX                  --> XXX --> [ABC INSTRUCTIONS: HOW TO COMBINE A, B, AND C]
 
 * dining room -->
+  - flowers            --> XXX                  --> XXX --> [C-KEY 1: LAT COORDINATES]
+  - chairs             --> XXX                  --> XXX --> [C-KEY 3: REVERSE CODE THE LOCATION]
 
-
-* balcony -->
-
+* terrace -->
+  - bean bag           --> XXX                  --> XXX --> [C-KEY 2: LONG COORDINATES]
+  - the edge           --> [C INSTRUCTIONS: C-KEYS 1 AND 2 ARE LAT AND LONG]
 
 * elevator -->
 
