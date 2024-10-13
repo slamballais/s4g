@@ -31,6 +31,8 @@ nav a:hover {
 
 .white-text {
     color: white;
+    border-top: 1px dashed white;
+    width: 80%;
 }
 
 
