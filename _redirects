@@ -1,3 +1,4 @@
+/36030                          /rooms/living/green_couch/36030.html                        200
 /bean_bag                       /rooms/terrace/bag/bean_bag.html                            200
 /chairs                         /rooms/dining/chairs/chairs.html                            200
 /cyclotrimethylenetrinitramine  /rooms/living/fireplace/cyclotrimethylenetrinitramine.html  200
@@ -7,6 +8,7 @@
 /edge                           /rooms/terrace/edge/edge.html                               200
 /fire_alarm                     /rooms/kitchen/alarm/fire_alarm.html                        200
 /flowers                        /rooms/dining/flowers/flowers.html                          200
+/FFFF00                         /rooms/living/green_couch/FFFF00.html                       200
 /green_couch                    /rooms/living/green_couch/green_couch.html                  200
 /fireplace                      /rooms/living/fireplace/fireplace.html                      200
 /kitchen                        /rooms/kitchen.html                                         200
@@ -25,7 +27,8 @@
 /superacknowledgement           /rooms/living/fireplace/superacknowledgement.html           200
 /terrace                        /rooms/terrace.html                                         200
 /trinitrophenylmethylnitramine  /rooms/living/fireplace/trinitrophenylmethylnitramine.html  200
-/versicolor                     /rooms/living/green_couch/virginica.html                    200
+/versicolor                     /rooms/living/green_couch/versicolor.html                   200
+/virginica                      /rooms/living/green_couch/virginica.html                    200
 /white_couch                    /rooms/living/white_couch/white_couch.html                  200
 
 

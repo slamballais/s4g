@@ -1,25 +1,25 @@
 * living room -->
-  - green couch        --> virginica            --> XXX --> [A-KEY 3]
-  - white couch        --> XXX                  --> XXX --> [A-KEY 2]
-  - lamp               --> XXX                  --> XXX --> [A INSTRUCTIONS: ]
-  - television         --> ring                 --> XXX --> [A-KEY 1]
+  - green couch        --> virginica            --> FFFF00                        --> 36030 [A-KEY 3]
+  - white couch        --> XXX                  --> XXX                           --> [A-KEY 2]
+  - lamp               --> XXX                  --> XXX                           --> [A INSTRUCTIONS: ]
+  - television         --> ring                 --> XXX                           --> [A-KEY 1]
   - fireplace          --> deoxyribonucleicacid --> trinitrophenylmethylnitramine --> superacknowledgement [A-KEY 4]
   - door               --> [[ELEVATOR]]
 
 * kitchen -->
-  - pantry             --> XXX                  --> XXX --> [B-KEY 1]
-  - kitchen drawer     --> XXX                  --> XXX --> [B-KEY 3]
-  - oven               --> XXX                  --> XXX --> [B-KEY 4]
-  - plant              --> XXX                  --> XXX --> [B INSTRUCTIONS: ]
-  - fire alarm         --> XXX                  --> XXX --> [B-KEY 2]
-  - kitchen machine    --> XXX                  --> XXX --> [ABC INSTRUCTIONS: HOW TO COMBINE A, B, AND C]
+  - pantry             --> XXX                  --> XXX                           --> [B-KEY 1]
+  - kitchen drawer     --> XXX                  --> XXX                           --> [B-KEY 3]
+  - oven               --> XXX                  --> XXX                           --> [B-KEY 4]
+  - plant              --> XXX                  --> XXX                           --> [B INSTRUCTIONS: ]
+  - fire alarm         --> XXX                  --> XXX                           --> [B-KEY 2]
+  - kitchen machine    --> XXX                  --> XXX                           --> [ABC INSTRUCTIONS: HOW TO COMBINE A, B, AND C]
 
 * dining room -->
-  - flowers            --> XXX                  --> XXX --> [C-KEY 1: LAT COORDINATES]
-  - chairs             --> XXX                  --> XXX --> [C-KEY 3: REVERSE CODE THE LOCATION]
+  - flowers            --> XXX                  --> XXX                           --> [C-KEY 1: LAT COORDINATES]
+  - chairs             --> XXX                  --> XXX                           --> [C-KEY 3: REVERSE CODE THE LOCATION]
 
 * terrace -->
-  - bean bag           --> XXX                  --> XXX --> [C-KEY 2: LONG COORDINATES]
+  - bean bag           --> XXX                  --> XXX                           --> [C-KEY 2: LONG COORDINATES]
   - the edge           --> [C INSTRUCTIONS: C-KEYS 1 AND 2 ARE LAT AND LONG]
 
 * elevator -->
@@ -28,8 +28,9 @@
 * stair -->
 
 * easter eggs
-- setosa (alternative for virginica)
-- versicolor (alternative for virginica)
+- living/green_couch/setosa (alternative for virginica)
+- living/green_couch/versicolor (alternative for virginica)
+- living/fire_place/cyclotrimethylenetrinitramine (if they don't do the assignment properly)
 
 * basement -->
 
