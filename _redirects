@@ -1,0 +1,30 @@
+/bean_bag                 /rooms/terrace/bag/bean_bag                     200
+/chairs                   /rooms/dining/chairs/chairs                     200
+/deoxyribonucleicacid     /rooms/living/fireplace/deoxyribonucleicacid    200
+/dining_room              /rooms/dining_room                              200
+/drawer                   /rooms/kitchen/drawer                           200
+/edge                     /rooms/terrace/edge/edge                        200
+/fire_alarm               /rooms/kitchen/alarm/fire_alarm                 200
+/flowers                  /rooms/dining/flowers/flowers                   200
+/green_couch              /rooms/living/green_couch/green_couch           200
+/fireplace                /rooms/living/fireplace/fireplace               200
+/kitchen                  /rooms/kitchen                                  200
+/kitchen_machine          /rooms/kitchen/machine/kitchen_machine          200
+/living_door              /rooms/living/door/living_door                  200
+/living_lamp              /rooms/living/lamp/living_lamp                  200
+/living_start             /rooms/living_start                             200
+/living_tv                /rooms/living/tv/living_tv                      200
+/living1                  /rooms/living1                                  200
+/living2                  /rooms/living2                                  200
+/oven                     /rooms/kitchen/oven/oven                        200
+/pantry                   /rooms/kitchen/pantry/pantry                    200
+/plant                    /rooms/kitchen/plant/plant                      200
+/ring                     /rooms/living/tv/ring                           200
+/setosa                   /rooms/living/green_couch/setosa                200
+/terrace                  /rooms/terrace                                  200
+/versicolor               /rooms/living/green_couch/virginica             200
+/white_couch              /rooms/living/white_couch/white_couch           200
+
+
+
+
