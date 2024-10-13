@@ -4,27 +4,36 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
-nav a {
-    margin-right: 15px;
-    color: red;
-    text-decoration: none;
-    transition: color 0.3s, text-decoration 0.3s;
-}
-nav a:hover {
-    color: red;
-    text-decoration: underline;
-}
-img {
-    max-width: 50%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px 0; /* Add some space around the image */
-}
+
 hr {
     border: 0;
     border-top: 1px dashed white;
     width: 80%;
 }
 
+img {
+    max-width: 50%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Add some space around the image */
+}
+
+nav a {
+    margin-right: 15px;
+    color: red;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+.white-text {
+    color: white;
+}
 
 
 
