@@ -10,12 +10,13 @@
 /dining_room                    /rooms/dining_room.html                                     200
 /drawer                         /rooms/kitchen/drawer.html                                  200
 /edge                           /rooms/terrace/edge/edge.html                               200
-/fire_alarm                     /rooms/kitchen/alarm/fire_alarm.html                        200
-/flowers                        /rooms/dining/flowers/flowers.html                          200
-/FFFF00                         /rooms/living/green_couch/FFFF00.html                       200
 /FF69B4                         /rooms/living/green_couch/FF69B4.html                       200
-/green_couch                    /rooms/living/green_couch/green_couch.html                  200
+/FFFF00                         /rooms/living/green_couch/FFFF00.html                       200
+/fire_alarm                     /rooms/kitchen/alarm/fire_alarm.html                        200
 /fireplace                      /rooms/living/fireplace/fireplace.html                      200
+/flowers                        /rooms/dining/flowers/flowers.html                          200
+/green_couch                    /rooms/living/green_couch/green_couch.html                  200
+/hallway                        /rooms/easter/hallway.html                                  200
 /kitchen                        /rooms/kitchen.html                                         200
 /kitchen_machine                /rooms/kitchen/machine/kitchen_machine.html                 200
 /living_door                    /rooms/living/door/living_door.html                         200
