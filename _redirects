@@ -1,20 +1,25 @@
 /13493                          /rooms/living/tv/13493.html                                 200
 /188                            /rooms/living/tv/188.html                                   200
+/420                            /rooms/easter/420.html                                      200
 /49828                          /rooms/living/white_couch/49828.html                        200
 /53139                          /rooms/living/white_couch/53139.html                        200
 /55621                          /rooms/living/white_couch/55621.html                        200
+/69                             /rooms/easter/69.html                                       200
 /bean_bag                       /rooms/terrace/bag/bean_bag.html                            200
+/bidoof                         /rooms/easter/bidoof.html                                   200
 /chairs                         /rooms/dining/chairs/chairs.html                            200
 /cyclotrimethylenetrinitramine  /rooms/living/fireplace/cyclotrimethylenetrinitramine.html  200
 /deoxyribonucleicacid           /rooms/living/fireplace/deoxyribonucleicacid.html           200
 /dining_room                    /rooms/dining_room.html                                     200
 /drawer                         /rooms/kitchen/drawer.html                                  200
 /edge                           /rooms/terrace/edge/edge.html                               200
+/end                            /rooms/easter/end.html                                      200
 /FF69B4                         /rooms/living/green_couch/FF69B4.html                       200
 /FFFF00                         /rooms/living/green_couch/FFFF00.html                       200
 /fire_alarm                     /rooms/kitchen/alarm/fire_alarm.html                        200
 /fireplace                      /rooms/living/fireplace/fireplace.html                      200
 /flowers                        /rooms/dining/flowers/flowers.html                          200
+/gis                            /rooms/easter/gis.html                                      200
 /green_couch                    /rooms/living/green_couch/green_couch.html                  200
 /hallway                        /rooms/easter/hallway.html                                  200
 /kitchen                        /rooms/kitchen.html                                         200
@@ -29,6 +34,8 @@
 /pantry                         /rooms/kitchen/pantry/pantry.html                           200
 /plant                          /rooms/kitchen/plant/plant.html                             200
 /ring                           /rooms/living/tv/ring.html                                  200
+/roof                           /rooms/easter/roof.html                                     200
+/sanderlamballais               /rooms/easter/sanderlamballais.html                         200
 /setosa                         /rooms/living/green_couch/setosa.html                       200
 /superacknowledgement           /rooms/living/fireplace/superacknowledgement.html           200
 /terrace                        /rooms/terrace.html                                         200
@@ -36,7 +43,7 @@
 /versicolor                     /rooms/living/green_couch/versicolor.html                   200
 /virginica                      /rooms/living/green_couch/virginica.html                    200
 /white_couch                    /rooms/living/white_couch/white_couch.html                  200
-
+/statistics4genomics            /index.html                                                 200
 
 
 
