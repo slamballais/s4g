@@ -25,6 +25,7 @@
 /hallway                        /rooms/easter/hallway.html                                  200
 /kitchen                        /rooms/kitchen.html                                         200
 /kitchen_machine                /rooms/kitchen/machine/kitchen_machine.html                 200
+/kualalumpur                    /rooms/easter/kualalumpur                                   200
 /living_door                    /rooms/living/door/living_door.html                         200
 /living_lamp                    /rooms/living/lamp/living_lamp.html                         200
 /living_start                   /rooms/living_start.html                                    200
@@ -34,7 +35,9 @@
 /oven                           /rooms/kitchen/oven/oven.html                               200
 /pantry                         /rooms/kitchen/pantry/pantry.html                           200
 /plant                          /rooms/kitchen/plant/plant.html                             200
+/p-value                        /rooms/easter/p-value.html                                  200
 /r                              /rooms/easter/r.html                                        200
+/regression                     /rooms/easter/regression.html                               200
 /ring                           /rooms/living/tv/ring.html                                  200
 /roof                           /rooms/easter/roof.html                                     200
 /sander                         /rooms/easter/sanderlamballais.html                         200
@@ -48,3 +51,4 @@
 /versicolor                     /rooms/living/green_couch/versicolor.html                   200
 /virginica                      /rooms/living/green_couch/virginica.html                    200
 /white_couch                    /rooms/living/white_couch/white_couch.html                  200
+/xkcd                           /rooms/easter/xkcd.html                                     200
