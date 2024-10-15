@@ -8,6 +8,7 @@
 /bean_bag                       /rooms/terrace/bag/bean_bag.html                            200
 /bidoof                         /rooms/easter/bidoof.html                                   200
 /chairs                         /rooms/dining/chairs/chairs.html                            200
+/chatgpt                        /rooms/easter/chatgpt.html                                  200
 /cyclotrimethylenetrinitramine  /rooms/living/fireplace/cyclotrimethylenetrinitramine.html  200
 /deoxyribonucleicacid           /rooms/living/fireplace/deoxyribonucleicacid.html           200
 /dining_room                    /rooms/dining_room.html                                     200
@@ -33,17 +34,17 @@
 /oven                           /rooms/kitchen/oven/oven.html                               200
 /pantry                         /rooms/kitchen/pantry/pantry.html                           200
 /plant                          /rooms/kitchen/plant/plant.html                             200
+/r                              /rooms/easter/r.html                                        200
 /ring                           /rooms/living/tv/ring.html                                  200
 /roof                           /rooms/easter/roof.html                                     200
+/sander                         /rooms/easter/sanderlamballais.html                         200
 /sanderlamballais               /rooms/easter/sanderlamballais.html                         200
 /setosa                         /rooms/living/green_couch/setosa.html                       200
+/statistics4genomics            /index.html                                                 200
+/statistics4genomics.com        /index.html                                                 200
 /superacknowledgement           /rooms/living/fireplace/superacknowledgement.html           200
 /terrace                        /rooms/terrace.html                                         200
 /trinitrophenylmethylnitramine  /rooms/living/fireplace/trinitrophenylmethylnitramine.html  200
 /versicolor                     /rooms/living/green_couch/versicolor.html                   200
 /virginica                      /rooms/living/green_couch/virginica.html                    200
 /white_couch                    /rooms/living/white_couch/white_couch.html                  200
-/statistics4genomics            /index.html                                                 200
-
-
-
