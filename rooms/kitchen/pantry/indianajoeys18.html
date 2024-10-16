@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiana Joeys</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        #secretMessage {
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.imgur.com/ewyfLWi.gif" alt="Indiana Jones" />
+    
+    <script>
+        function checkTime() {
+            const currentTime = new Date();
+            const currentMinute = currentTime.getMinutes();
+            
+            // Set the specific minutes when you want the message to be visible
+            const visibleMinutes = [15, 30, 45]; // Only visible at 15, 30, and 45 minutes past the hour
+
+            const messageElement = document.getElementById("secretMessage");
+
+            // Check if the current minute is in the visibleMinutes array
+            if (visibleMinutes.includes(currentMinute)) {
+                messageElement.style.display = "block";
+            } else {
+                messageElement.style.display = "none";
+            }
+        }
+
+        // Run the checkTime function every minute
+        setInterval(checkTime, 1000);
+    </script>
+    <p>
+        You're so close... You can see the next key piece, it's right there.<br>
+
+    </p>
+    
+    <div id="secretMessage">
+        The hidden word is: careful
+    </div>
+    
+    <p class="white-text">Where do you want to go?</p>
+    
+    <nav>
+        <a href="living2">Living room</a><br>
+        <a href="kitchen">Kitchen</a>
+    </nav>
+</body>
+</html>

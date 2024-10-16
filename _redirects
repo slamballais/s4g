@@ -1,13 +1,15 @@
-/12                             /rooms/dining/12.html                                       200
+/12                             /rooms/dining/chairs/12.html                                200
 /13493                          /rooms/living/tv/13493.html                                 200
 /188                            /rooms/living/tv/188.html                                   200
-/2364                           /rooms/dining/2364.html                                     200
+/2364                           /rooms/dining/chairs/2364.html                              200
 /420                            /rooms/easter/420.html                                      200
+/45                             /rooms/terrace/bag/45.html                                  200
 /49828                          /rooms/living/white_sofa/49828.html                         200
 /53139                          /rooms/living/white_sofa/53139.html                         200
 /55621                          /rooms/living/white_sofa/55621.html                         200
-/56330                          /rooms/dining/56330.html                                    200
+/56330                          /rooms/dining/chairs/56330.html                             200
 /69                             /rooms/easter/69.html                                       200
+/8675                           /rooms/terrace/bag/8675.html                                200
 /bean_bag                       /rooms/terrace/bag/bean_bag.html                            200
 /bedroom                        https://jcw87.github.io/c2-sans-fight/                      301
 /bidoof                         /rooms/easter/bidoof.html                                   200
@@ -21,6 +23,7 @@
 /end                            /rooms/easter/end.html                                      200
 /FF69B4                         /rooms/living/green_sofa/FF69B4.html                        200
 /FFFF00                         /rooms/living/green_sofa/FFFF00.html                        200
+/fiat128                        /rooms/terrace/bag/fiat128.html                             200
 /fire_alarm                     /rooms/kitchen/alarm/fire_alarm.html                        200
 /fireplace                      /rooms/living/fireplace/fireplace.html                      200
 /flowers                        /rooms/dining/flowers/flowers.html                          200
@@ -29,6 +32,7 @@
 /hallway                        /rooms/easter/hallway.html                                  200
 /help                           /rooms/easter/help.html                                     200
 /hint                           /rooms/easter/hint.html                                     200
+/indianajoeys18                 /rooms/kitchen/pantry/indianajoeys18.html                   200
 /kitchen                        /rooms/kitchen.html                                         200
 /kitchen_machine                /rooms/kitchen/machine/kitchen_machine.html                 200
 /kualalumpur                    /rooms/easter/kualalumpur                                   200
@@ -65,6 +69,7 @@
 /versicolor                     /rooms/living/green_sofa/versicolor.html                    200
 /virginica                      /rooms/living/green_sofa/virginica.html                     200
 /url                            https://www.nytimes.com/games/connections                   301
+/vegasgoldenknights             /rooms/kitchen/pantry/vegasgoldenknights.html               200
 /word                           https://www.nytimes.com/games/wordle/index.html             301
 /white_sofa                     /rooms/living/white_sofa/white_sofa.html                    200
 /xkcd                           /rooms/easter/xkcd.html                                     200

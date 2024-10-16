@@ -7,7 +7,7 @@
   - door               --> [[ELEVATOR]]
 
 * kitchen -->
-  - pantry             --> XXX                  --> XXX                           --> [B-KEY 1]
+  - pantry             --> vegasgoldenknights   --> indianajoeys18                --> [B-KEY 1]
   - kitchen drawer     --> gordonramsay         --> XXX                           --> [B-KEY 3]
   - oven               --> XXX                  --> XXX                           --> [B-KEY 4]
   - plant              --> XXX                  --> XXX                           --> [B INSTRUCTIONS: ]
@@ -19,8 +19,8 @@
   - chairs             --> 56330                --> 2364                          --> 12 [C-KEY 3: REVERSE CODE THE LOCATION]
 
 * terrace -->
-  - bean bag           --> XXX                  --> XXX                           --> [C-KEY 2: LONG COORDINATES]
-  - the edge           --> [C INSTRUCTIONS: C-KEYS 1 AND 2 ARE LAT AND LONG]
+  - bean bag           --> 8675                 --> 45                            --> fiat128 [C-KEY 2: LONG COORDINATES]
+  - the edge           --> [C INSTRUCTIONS: C-KEYS 1 AND 2 ARE LAT AND LONG (bergambacht)]
 
 * elevator -->
 
