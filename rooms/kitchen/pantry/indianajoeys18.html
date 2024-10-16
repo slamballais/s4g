@@ -19,7 +19,7 @@
         function checkTime() {
             const currentTime = new Date();
             const currentMinute = currentTime.getMinutes();
-            const visibleMinutes = [38, 40, 42, 45];
+            const visibleMinutes = [47, 49, 51];
             
             if (visibleMinutes.includes(currentMinute)) {
                 fetchSecretMessage();
@@ -30,7 +30,9 @@
             fetch('secretMessage.txt')
                 .then(response => response.text())
                 .then(text => {
-                    document.getElementById("secretMessage").innerHTML = text;
+                    const secretMessageElement = document.getElementById("secretMessage");
+                    secretMessageElement.innerHTML = text;
+                    secretMessageElement.style.display = "block";
                 });
         }
     
