@@ -1,9 +1,12 @@
+/12                             /rooms/dining/12.html                                       200
 /13493                          /rooms/living/tv/13493.html                                 200
 /188                            /rooms/living/tv/188.html                                   200
+/2364                           /rooms/dining/2364.html                                     200
 /420                            /rooms/easter/420.html                                      200
 /49828                          /rooms/living/white_sofa/49828.html                         200
 /53139                          /rooms/living/white_sofa/53139.html                         200
 /55621                          /rooms/living/white_sofa/55621.html                         200
+/56330                          /rooms/dining/56330.html                                    200
 /69                             /rooms/easter/69.html                                       200
 /bean_bag                       /rooms/terrace/bag/bean_bag.html                            200
 /bedroom                        https://jcw87.github.io/c2-sans-fight/                      301
@@ -24,9 +27,12 @@
 /gis                            /rooms/easter/gis.html                                      200
 /green_sofa                     /rooms/living/green_sofa/green_sofa.html                    200
 /hallway                        /rooms/easter/hallway.html                                  200
+/help                           /rooms/easter/help.html                                     200
+/hint                           /rooms/easter/hint.html                                     200
 /kitchen                        /rooms/kitchen.html                                         200
 /kitchen_machine                /rooms/kitchen/machine/kitchen_machine.html                 200
 /kualalumpur                    /rooms/easter/kualalumpur                                   200
+/link                           https://www.nytimes.com/games/connections                   301
 /living_door                    /rooms/living/door/living_door.html                         200
 /living_lamp                    /rooms/living/lamp/living_lamp.html                         200
 /living_start                   /rooms/living_start.html                                    200
@@ -36,9 +42,11 @@
 /map                            /rooms/easter/map.html                                      200
 /oven                           /rooms/kitchen/oven/oven.html                               200
 /pantry                         /rooms/kitchen/pantry/pantry.html                           200
+/password                       https://neal.fun/password-game/                             301
 /plant                          /rooms/kitchen/plant/plant.html                             200
-/p-value                        /rooms/easter/p-value.html                                  200
+/pokedex                        /rooms/easter/pokedex.html                                  200
 /python                         /rooms/easter/pyton.html                                    200
+/p-value                        /rooms/easter/p-value.html                                  200
 /r                              /rooms/easter/r.html                                        200
 /regression                     /rooms/easter/regression.html                               200
 /ring                           /rooms/living/tv/ring.html                                  200
@@ -47,6 +55,7 @@
 /sander                         /rooms/easter/sanderlamballais.html                         200
 /sanderlamballais               /rooms/easter/sanderlamballais.html                         200
 /setosa                         /rooms/living/green_sofa/setosa.html                        200
+/snorlax                        /rooms/easter/snorlax.html                                  200
 /statistics4genomics            /index.html                                                 200
 /statistics4genomics.com        /index.html                                                 200
 /superacknowledgement           /rooms/living/fireplace/superacknowledgement.html           200
@@ -55,5 +64,7 @@
 /trinitrophenylmethylnitramine  /rooms/living/fireplace/trinitrophenylmethylnitramine.html  200
 /versicolor                     /rooms/living/green_sofa/versicolor.html                    200
 /virginica                      /rooms/living/green_sofa/virginica.html                     200
+/url                            https://www.nytimes.com/games/connections                   301
+/word                           https://www.nytimes.com/games/wordle/index.html             301
 /white_sofa                     /rooms/living/white_sofa/white_sofa.html                    200
 /xkcd                           /rooms/easter/xkcd.html                                     200
