@@ -19,21 +19,21 @@
         function checkTime() {
             const currentTime = new Date();
             const currentMinute = currentTime.getMinutes();
+            const visibleMinutes = [15, 30, 45];
             
-            // Set the specific minutes when you want the message to be visible
-            const visibleMinutes = [15, 30, 40]; // Only visible at 15, 30, and 45 minutes past the hour
-
-            const messageElement = document.getElementById("secretMessage");
-
-            // Check if the current minute is in the visibleMinutes array
             if (visibleMinutes.includes(currentMinute)) {
-                messageElement.style.display = "block";
-            } else {
-                messageElement.style.display = "none";
+                fetchSecretMessage();
             }
         }
-
-        // Run the checkTime function every minute
+    
+        function fetchSecretMessage() {
+            fetch('secretMessage.txt')
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById("secretMessage").innerHTML = text;
+                });
+        }
+    
         setInterval(checkTime, 1000);
     </script>
     <p>
@@ -44,7 +44,7 @@
     </p>
     
     <div id="secretMessage">
-        The hidden word is: patience
+        
     </div>
     
     <p class="white-text">Where do you want to go?</p>
