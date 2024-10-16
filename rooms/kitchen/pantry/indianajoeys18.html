@@ -19,10 +19,13 @@
         function checkTime() {
             const currentTime = new Date();
             const currentMinute = currentTime.getMinutes();
-            const visibleMinutes = [47, 49, 51];
+            const visibleMinutes = [53, 55, 57];
             
-            if (visibleMinutes.includes(currentMinute)) {
+           if (visibleMinutes.includes(currentMinute)) {
                 fetchSecretMessage();
+            } else {
+                // Hide the message if the current minute is not in the visibleMinutes
+                secretMessageElement.style.display = "none";
             }
         }
     
