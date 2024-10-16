@@ -36,6 +36,7 @@
 /kitchen                        /rooms/kitchen.html                                         200
 /kitchen_machine                /rooms/kitchen/machine/kitchen_machine.html                 200
 /kualalumpur                    /rooms/easter/kualalumpur                                   200
+/lazy                           /rooms/kitchen/pantry/lazy.html                             200
 /link                           https://www.nytimes.com/games/connections                   301
 /living_door                    /rooms/living/door/living_door.html                         200
 /living_lamp                    /rooms/living/lamp/living_lamp.html                         200

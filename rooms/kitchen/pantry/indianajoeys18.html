@@ -19,7 +19,7 @@
         function checkTime() {
             const currentTime = new Date();
             const currentMinute = currentTime.getMinutes();
-            const visibleMinutes = [1, 3];
+            const visibleMinutes = [15, 30, 40];
             
             // Define secretMessageElement here, so it's accessible in both blocks
             const secretMessageElement = document.getElementById("secretMessage");
@@ -58,7 +58,9 @@
         Only on the number of minutes that you can find in a tennis game.<br>
         Whatever that means...
     </p>
-    
+    <div id="hiddenWord">
+      The hidden word is: lazy
+    </div>
     <div id="secretMessage">
 
     </div>
