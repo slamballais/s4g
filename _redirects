@@ -18,7 +18,7 @@
 /cyclotrimethylenetrinitramine  /rooms/living/fireplace/cyclotrimethylenetrinitramine.html  200
 /deoxyribonucleicacid           /rooms/living/fireplace/deoxyribonucleicacid.html           200
 /dining_room                    /rooms/dining_room.html                                     200
-/drawer                         /rooms/kitchen/drawer.html                                  200
+/drawer                         /rooms/kitchen/drawer/drawer.html                           200
 /edge                           /rooms/terrace/edge/edge.html                               200
 /end                            /rooms/easter/end.html                                      200
 /FF69B4                         /rooms/living/green_sofa/FF69B4.html                        200
@@ -28,6 +28,7 @@
 /fireplace                      /rooms/living/fireplace/fireplace.html                      200
 /flowers                        /rooms/dining/flowers/flowers.html                          200
 /gis                            /rooms/easter/gis.html                                      200
+/gordonramsay                   /rooms/kitchen/drawer/gordonramsay.html                     200
 /green_sofa                     /rooms/living/green_sofa/green_sofa.html                    200
 /hallway                        /rooms/easter/hallway.html                                  200
 /help                           /rooms/easter/help.html                                     200

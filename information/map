@@ -12,7 +12,7 @@
   - oven               --> XXX                  --> XXX                           --> [B-KEY 4]
   - plant              --> XXX                  --> XXX                           --> [B INSTRUCTIONS: GRAB THE 15TH WORD OF LYRICS]
   - fire alarm         --> XXX                  --> XXX                           --> [B-KEY 2]
-  - kitchen machine    --> XXX                  --> XXX                           --> [ABC INSTRUCTIONS: HOW TO COMBINE A, B, AND C]
+  - kitchen machine    --> (decrypt text 1)     --> (decrypt text 2)              --> decrypt text 3 [ABC INSTRUCTIONS: HOW TO COMBINE A, B, AND C]
 
 * dining room -->
   - flowers            --> XXX                  --> XXX                           --> [C-KEY 1: LAT COORDINATES]

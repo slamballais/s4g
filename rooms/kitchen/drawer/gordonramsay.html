@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gordon Ramsay Popups</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Basic popup styling */
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    const quotes = [
+        "IT'S FUCKING RAW!",
+        "WHAT ARE YOU? AN IDIOT SANDWICH?",
+        "SHUT IT DOWN!",
+        "THIS IS ABSOLUTELY PATHETIC!",
+        "YOU'RE GONNA KILL SOMEBODY!",
+        "GET OUT OF MY KITCHEN!",
+        "THIS IS A DISASTER!",
+        "WHERE'S THE LAMB SAUCE?",
+        "IT'S LIKE A TOILET BRUSH!",
+        "YOU DONKEY!"
+    ];
+
+    function showPopup() {
+        const popup = document.createElement("div");
+        popup.className = "popup";
+        popup.textContent = quotes[Math.floor(Math.random() * quotes.length)];
+        document.body.appendChild(popup);
+
+        // Make the popup visible
+        setTimeout(() => {
+            popup.style.opacity = 1;
+        }, 100);
+
+        // Remove the popup after a few seconds
+        setTimeout(() => {
+            popup.style.opacity = 0;
+            setTimeout(() => {
+                document.body.removeChild(popup);
+            }, 500);
+        }, 3000);
+    }
+
+    // Randomly trigger popups every few seconds
+    setInterval(showPopup, Math.random() * 10000 + 5000); // Between 5-15 seconds
+</script>
+
+</body>
+</html>
