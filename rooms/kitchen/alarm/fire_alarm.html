@@ -13,14 +13,15 @@
 </head>
 <body>
     <script>
-        let isYellow = false;
+        let colors = ['black', '#f0e68c', 'yellow'];
+        let index = 0;
 
         function flickerBackground() {
-            document.body.style.backgroundColor = isYellow ? 'black' : 'yellow';
-            isYellow = !isYellow;
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;
         }
 
-        setInterval(flickerBackground, 1000); // Change color every 1 second
+        setInterval(flickerBackground, 1000);
     </script>
     
     <img src="https://media.lordicon.com/icons/wired/lineal/1924-fire-alarm.gif" alt="Alarm" />
