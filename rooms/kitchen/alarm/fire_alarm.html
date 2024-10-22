@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fire alarm</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Flickering Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+        }
+    </style>
 </head>
 <body>
-    <p>
-        A fire alarm.<br>
-    </p>
+    <script>
+        let isYellow = false;
+
+        function flickerBackground() {
+            document.body.style.backgroundColor = isYellow ? 'black' : 'yellow';
+            isYellow = !isYellow;
+        }
+
+        setInterval(flickerBackground, 1000); // Change color every 1 second
+    </script>
     
-    <img src=xx alt="Fire alarm" />
+    <img src="https://media.lordicon.com/icons/wired/lineal/1924-fire-alarm.gif" alt="Alarm" />
+    
+    <p>
+      AH SHEESH!<br>
+      TURN IT OFF, TURN IT OFF!<br><br>
+    </p>
+</body>
+</html>
     
     <p class="white-text">Where do you want to go?</p>
     

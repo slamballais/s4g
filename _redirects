@@ -25,7 +25,6 @@
 /FF69B4                         /rooms/living/green_sofa/FF69B4.html                        200
 /FFFF00                         /rooms/living/green_sofa/FFFF00.html                        200
 /fiat128                        /rooms/terrace/bag/fiat128.html                             200
-/fire_alarm                     /rooms/kitchen/alarm/fire_alarm.html                        200
 /fireplace                      /rooms/living/fireplace/fireplace.html                      200
 /flowers                        /rooms/dining/flowers/flowers.html                          200
 /gis                            /rooms/easter/gis.html                                      200
@@ -50,6 +49,8 @@
 /living4                        /rooms/easter/living4.html                                  200
 /living5                        /rooms/easter/living5.html                                  200
 /map                            /rooms/easter/map.html                                      200
+/off                            /rooms/kitchen/alarm/off.html                               200
+/on                             /rooms/kitchen/alarm/fire_alarm.html                        200
 /oven                           /rooms/kitchen/oven/oven.html                               200
 /paninihead                     /rooms/kitchen/drawer/paninihead.html                       200
 /pantry                         /rooms/kitchen/pantry/pantry.html                           200
