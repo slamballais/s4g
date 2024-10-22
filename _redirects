@@ -13,6 +13,7 @@
 /bean_bag                       /rooms/terrace/bag/bean_bag.html                            200
 /bedroom                        https://jcw87.github.io/c2-sans-fight/                      301
 /bidoof                         /rooms/easter/bidoof.html                                   200
+/bsep                           /rooms/kitchen/drawer/bsep.html                             200
 /chairs                         /rooms/dining/chairs/chairs.html                            200
 /chatgpt                        /rooms/easter/chatgpt.html                                  200
 /cyclotrimethylenetrinitramine  /rooms/living/fireplace/cyclotrimethylenetrinitramine.html  200
@@ -50,6 +51,7 @@
 /living5                        /rooms/easter/living5.html                                  200
 /map                            /rooms/easter/map.html                                      200
 /oven                           /rooms/kitchen/oven/oven.html                               200
+/paninihead                     /rooms/kitchen/drawer/paninihead.html                       200
 /pantry                         /rooms/kitchen/pantry/pantry.html                           200
 /password                       https://neal.fun/password-game/                             301
 /plant                          /rooms/kitchen/plant/plant.html                             200
