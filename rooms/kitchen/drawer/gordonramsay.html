@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <style>
         .popup {
-            position: fixed;
+            position: absolute;
             background-color: black;
             color: white;
             padding: 20px;
@@ -203,52 +203,47 @@
           ];
   
       let currentPopups = 0;
-      const maxPopups = 5;
+      const maxPopups = 10;
   
-      function showPopup() {
-          if (currentPopups >= maxPopups) return;
-  
-          currentPopups++;
-          const popup = document.createElement("div");
-          popup.className = "popup";
-          popup.textContent = quotes[Math.floor(Math.random() * quotes.length)];
-          
-          // Append the popup to the body to measure its size
-          document.body.appendChild(popup);
-          
-          // Get the height and width of the popup
-          const popupWidth = popup.offsetWidth;
-          const popupHeight = popup.offsetHeight;
-          
-          // Remove the popup from the DOM after measuring
-          document.body.removeChild(popup);
-          
-          // Set random position within the viewport
-          const randomX = Math.floor(Math.random() * (window.innerWidth - popupWidth));
-          const randomY = Math.floor(Math.random() * (window.innerHeight - popupHeight));
-          
-          popup.style.position = "absolute";
-          popup.style.left = `${randomX}px`;
-          popup.style.top = `${randomY}px`;
-          popup.style.opacity = 0;
-          document.body.appendChild(popup);
-  
-          // Make the popup visible
-          setTimeout(() => {
-              popup.style.opacity = 1;
-  
-              // Remove the popup after a few seconds
-              setTimeout(() => {
-                  popup.style.opacity = 0;
-                  setTimeout(() => {
-                      document.body.removeChild(popup);
-                      currentPopups--;
-                  }, 500);
-              }, 3000);
-          }, 10);
-      }
-  
-      setInterval(showPopup, 1000);
+    function showPopup() {
+        if (currentPopups >= maxPopups) return;
+
+        currentPopups++;
+        const popup = document.createElement("div");
+        popup.className = "popup";
+        popup.textContent = quotes[Math.floor(Math.random() * quotes.length)];
+
+        document.body.appendChild(popup);
+
+        const popupWidth = popup.offsetWidth;
+        const popupHeight = popup.offsetHeight;
+
+        document.body.removeChild(popup);
+
+        const randomX = Math.floor(Math.random() * (window.innerWidth - popupWidth));
+        const scrollY = window.scrollY || window.pageYOffset;
+        const documentHeight = document.documentElement.scrollHeight;
+        const visibleHeight = window.innerHeight;
+        const randomY = Math.floor(scrollY + Math.random() * (visibleHeight - popupHeight));
+
+        popup.style.left = `${randomX}px`;
+        popup.style.top = `${randomY}px`;
+        popup.style.opacity = 0;
+        document.body.appendChild(popup);
+
+        setTimeout(() => {
+            popup.style.opacity = 1;
+            setTimeout(() => {
+                popup.style.opacity = 0;
+                setTimeout(() => {
+                    document.body.removeChild(popup);
+                    currentPopups--;
+                }, 500);
+            }, 3000);
+        }, 10);
+    }
+
+    setInterval(showPopup, 1000);
   </script>
   
   <p>
@@ -262,7 +257,7 @@
     These clowns have written code so convoluted, it’d take Einstein himself to figure out what the bloody hell they were thinking.<br>
     Look, if you get this sorted, maybe we can have something that resembles a real kitchen.<br>
     But if you screw this up, I’m sending you straight out the door with them! Now MOVE IT!<br>
-    Don’t just stand there like a DONKEY!"
+    Don’t just stand there like a DONKEY!"<br><br>
 
     # Load the packages that we need<br>
     library(meal)<br>
