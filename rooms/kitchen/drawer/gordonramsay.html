@@ -6,18 +6,21 @@
     <title>Gordon Ramsay Popups</title>
     <link rel="stylesheet" href="styles/styles.css">
     <style>
-        /* Basic popup styling */
-        .popup {
+       .popup {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
-            padding: 15px;
-            border-radius: 5px;
-            font-size: 16px;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 50px;
+            text-align: center;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
+            z-index: 1000;
+            max-width: 300px;
+            word-wrap: break-word;
+            left: 10px; /* Fixed position for testing */
+            top: 10px; /* Fixed position for testing */
         }
     </style>
 </head>
@@ -29,15 +32,169 @@
         "WHAT ARE YOU? AN IDIOT SANDWICH?",
         "SHUT IT DOWN!",
         "THIS IS ABSOLUTELY PATHETIC!",
-        "YOU'RE GONNA KILL SOMEBODY!",
+        "THERE IS ENOUGH GARLIC IN HERE TO KILL EVERY VAMPIRE IN EUROPE!",
         "GET OUT OF MY KITCHEN!",
         "THIS IS A DISASTER!",
-        "WHERE'S THE LAMB SAUCE?",
+        "YOU PUT SO MUCH GINGER IN THIS, IT'S A WEASLEY!",
+        "DON'T JUST STAND THERE LIKE A BIG FUCKING MUFFIN!",
+        "STOP TAKING THINGS PERSONALLY!",
+        "I WOULDN'T TRUST YOU RUNNING A BATH LET ALONE A RESTAURANT!",
+        "THE FISH IS SO RAW, HE'S STILL FINDING NEMO!",
+        "HEY! PANINI HEAD! ARE YOU EVEN LISTENING TO ME?",
+        "YOU USED SO MUCH OIL, THE UNITED STATES WANT TO INVADE THE FUCKING PLATE!",
+        "WHERE'S THE LAMB SAAAAAAUUUUUUCE?",
+        "IT LOOKS LIKE GANDHI'S FLIP-FLOP!",
+        "HEY MADAM! FUCK ME? HOW ABOUT FUCK YOU!",
+        "IT LOOKS LIKE BARBIE'S VOMIT!",
+        "IT LOOKS LIKE THE INSIDE OF MY GRANDDAD'S UNDERPANTS!",
+        "SHUT UP. WOULD YOU *MIND* NOT BEING SO RUDE?",
+        "TONIGHT IS ABOUT CONSISTENCY... AT LEAST YOU'RE CONSISTENTLY SHIT!",
+        "DO YOU WONDER WHY I GO APESHIT? STANDING THERE FOR FIVE MINUTES SEEING HOW PAINFUL IT IS!",
+        "STOP! I AM CLOSING IT DOWN!",
+        "GET OUT!",
+        "THANK YOU... FOR GIVING ME ONE HUGE HEADACHE!",
+        "I SWEAR TO GOD, IT'S THE KIND OF SHIT YOU'D EXPECT TIGER WOODS TO TEE OFF WITH! LOOK AT IT... RUBBER, RUBBER, RUBBER!",
         "IT'S LIKE A TOILET BRUSH!",
-        "YOU DONKEY!"
-    ];
+        "YOU DONKEY!",
+        "I'M SHUTTING IT DOWN!",
+        "WAKE UP!",
+        "PATHETIC!",
+        "GET BACK TO YOUR SECTION!",
+        "IF YOU SAUTÉ IN A NON-STICK, IT WONT STICK! THAT'S WHY IT'S CALLED FUCKING NON-STIIIIIIICK!",
+        "GET IT ON THE STOVE!",
+        "WHAT ARE YOU DOING!?",
+        "SHUT IT DOWN!",
+        "WHAT'S SO FUCKING COMPLICATED?!",
+        "WHAT WE GOT TO WAVE ABOUT, I DON'T CARE! GET OUT!",
+        "STOP IT!",
+        "SHUT IT DOWN! TURN IT OFF!",
+        "GET OUT! FUCKING GET OUT!",
+        "IT WAS ON THE FUCKING FLOOR!",
+        "RRRRRRRRAAAAAAAAAAAAAAAAAAAAWWWWWWWW!",
+        "NO NO NO NO NO! NO!",
+        "GET OUT! OUT! OUT! OUT! GET OUT! OUT! TAKE YOUR JACKET OFF AND FUCK OFF!",
+        "I'M NOT SERVING THAT!",
+        "COME HERE YOU!",
+        "THIS IS A FUCKING MESS!",
+        "IT'S STONE FUCKING COLD! ICE-COLD IN THE CENTER!",
+        "WHERE IS YOUR PASSION?!",
+        "IT'S RAW, IT'S STILL FUCKING RAW!",
+        "IS THAT YOUR BEST?!",
+        "GO BACK IN LINE!",
+        "I'M DONE!",
+        "PINK CHICKEN! PINK FUCKING CHICKEN!",
+        "FUCK! RAW CHICKEN FOLLOWED BY RAW CHICKEN!",
+        "ALL OF YOU, FUCK OFF OUT OF HERE!",
+        "45 FUCKING MINUTES?!",
+        "STOP! YOU! ARE! DONE! THE COMPETITION FOR YOU IS OVER!",
+        "HEY YOUNG MAN! FRONT DOOR! GET OUT! GET OUT!",
+        "FUCKING WAKE UP!",
+        "GET A GRIP!",
+        "LOOK AT IT! RIDICULOUS!",
+        "YOU'RE MAKING EXCUSES!",
+        "HOLD YOUR HEADS IN FUCKING SHAME!",
+        "RARE? IT'S FUCKING QUACKING!",
+        "THAT'S NOT A POTATO, THAT'S A BLOCK OF PARMESAN, YOU FUCKING DONUT!",
+        "HEY YOU! COME HERE! I'VE HAD ENOUGH!",
+         "I JUST WANT TO GO WITH SOME FOOD!",
+         "AH, FUCK ME! SHIT!",
+         "IT'S LIKE A FUCKING GOLF BALL! GOLF BALL!",
+         "TOUCH THAT! TOUCH THAT! RUBBER!",
+         "ENOUGH'S ENOUGH!",
+         "WE COOK SPAGHETTI TO ORDER! EVEN THE FUCKING SCUMMIEST ITALIAN RESTAURANT IN VENICE BEACH COOK SPAGHETTI TO ORDER!",
+         "LOOK AT ME!",
+         "IT'S JUST SO SAD!",
+         "IT'S STONE COOOOOOOOOOOOLLLLLLLLDDDDDDDDD!",
+         "GET IT ON THE STOVE!"
+         "IT'S FUCKING RANCID! HOW CAN YOU DO THAT?",
+         "WHY'D YOU LET IT GO WHEN YOU KNOW IT'S NOT FUCKING READY?!",
+         "WHAT IS THAT? WHAT IS THAT?!",
+         "HEY DIRTBRAIN! WHY IS THE OVEN NOT ON?!",
+         "JUST... LISTEN... CONCENTRATE!",
+         "LISTEN! ONE... SPAGHETTI... ONE... SCALLOPS! FOUR MINUTES TO WINDOW! MOVE YOUR ARSE!",
+         "YOU AIN'T EVER JOGGED A DAY IN YOUR LIFE, AND YOUR ASS SHOWS IT!",
+         "THIS CRAB IS SO UNDERCOOKED I CAN STILL HEAR IT SINGING 'UNDER THE SEA'!",
+         "I'VE NEVER, EVER, EVER, EVER, EVER MET SOMEONE I BELIEVE IN... AS LITTLE AS YOU!",
+         "YOU DO SERIOUSLY SURPRISE ME... YOU SURPRISE ME AS TO HOW BAD YOU ARE!",
+         "YOU ADDED SO MUCH SALT AND PEPPER I CAN HEAR THE DISH SINGING 'Push It'!",
+         "MY GRAN COULD DO BETTER! AND SHE'S DEAD!",
+         "THIS SOUFFLE HAS SUNK SO BADLY JAMES CAMERON WANTS TO MAKE A FILM ABOUT IT!",
+         "WHY DID THE CHICKEN CROSS THE ROAD? BECAUSE YOU DIDN'T FUCKING COOK IT!",
+         "THIS PIZZA IS SO DISGUSTING, IF YOU TAKE IT TO ITALY, YOU'LL GET ARRESTED!",
+         "YOU'RE COOKING IN A BURNT PAN, YOU FUCKING DONKEY!",
+         "DON'T BE STUPID! DON'T BE STUPID!",
+         "HONESTLY, CHIMICHANGA... CHIMICHUCK IT IN THE BIN!",
+         "THIS LAMB IS SO UNDERCOOKED, IT'S FOLLOWING MARY TO SCHOOL!", 
+         "THE PROBLEM WITH YANKS IS THAT THEY ARE WIMPS!",
+         "THIS IS A REALLY TOUGH DECISION... 'CAUSE YOU'RE BOTH CRAP!",
+         "I'M GORDON RAMSAY, FOR GOODNESS SAKE!",
+         "YOU GUYS COOK LIKE GRANDPAS FUCK!",
+         "YOU'RE NOT A QUITTER? YOU'RE NOT A FUCKING COOK EITHER!",
+         "THIS PORK IS SO RAW, IT'S STILL SINGING HAKUNA MATATA!",
+         "I'LL GET YOU MORE PUMPKIN, I'LL RAM IT RIGHT UP YOUR ASS!",
+         "YOU USED SO MUCH THYME, DR WHO ARRIVED IN THE TARDIS TO SAVE US ALL!",
+         "THIS SALAD IS SO FRESH IT HAD TO LIVE WITH ITS AUNTY AND UNCLE IN BEL AIR!",
+         "FOR WHAT WE ARE ABOUT TO EAT, MAY THE LORD MAKE US TRULY NOT VOMIT!",
+         "CAN YOU ESCORT THESE TWO LADIES, PLEASE? BACK TO PLASTIC SURGERY!",
+         "ALL OF YOU COME HERE!",
+         "DON'T WHISTLE AT ME, I'M NOT YOUR FUCKING DOG!",
+         "FINE DINING? A FINE FUCKING MESS!",
+         "THIS PIGEON IS SO RAW IT COULD STILL FLY!",
+         "ROMANTIC DINNER? MORE LIKE A FUCKED UP DINNER!",
+         "IT'S FUCKING REDDER THAN YOUR BEARD, IT'S STILL RAW!",
+         "I'M GLAD YOU WERE INSPIRED BY THE COOKING AISLE, NOT THE FUCKING PET FOOD AISLE!",
+         "ALL-STARS? LET'S GET ONE THING RIGHT... NO-STARS!",
+         "IF YOU WERE MY BRIGADE, I WOULD HAVE FIRED YOU FUCKING SIXTEEN YEARS AGO!",
+         "IT's ROTTTTTEEEEENNNNN!",
+         "EXECUTIVE CHEF? CERTIFIED DICK!",
+         "YOU'RE GOING TO KILL SOMEONE! TELL HIM IN HIS LANGUAGE HE IS GOING TO KILL SOMEONE!",
+         "WE'RE NOT EVER SERVING *ANY* OF THIS FOOD EVER AGAIN!"
+         "THEY'RE MOLDY, YOU PILLOCK!",
+         "HALF IS FAT, YOU IDIOT! IT'S FATTER THAN YOU!",
+         "THE SOUP OF THE DAY IS THE SAME EVERY DAY? FUCK ME!",
+         "THIS SQUID IS SO UNDERCOOKED I CAN STILL HEAR IT TELLING SPONGEBOB TO FUCK OFF!",
+         "PARTNERS? PARTNERS IN CRIME!",
+         "THE FRESHEST THING IN THIS KITCHEN IS THAT PIGEON!",
+         "FRESH FROZEN?!",
+         "EVERY TIME I SEE YOU... RUNNING AROUND LIKE A FUCKING BABY RHINOCEROS TRYING TO HAVE A SHIT!",
+         "IT LOOKS LIKE A THOUSAND BUFFALOES RAN THROUGH HERE!",
+         "THIS IS AN EMBARRASSMENT TO BOTH PIZZA AND JAPANESE FOOD!",
+         "DENVER PIZZA? IT'S LIKE THE PIZZA ATE DENVER!",
+         "DID SOMEBODY SPIT ON MY FOOD?!",
+         "STOP JUMPING UP AND DOWN LIKE A FUCKING BABOON!",
+         "IT'S SO FUCKING RAW IT'S STILL GOT ITS WOOL ON IT!",
+         "ARE WE MAKING A SOUP OR TRYING TO SUMMON A DEMON?",
+         "RIGHT NOW, I'D RATHER EAT POODLE SHIT THAN PUT THAT IN MY MOUTH!",
+         "HE CAN'T COUNT TO FUCKING TWO!",
+         "THE BEEF IS SO UNDERCOOKED, IT'S STARTING TO EAT THE FUCKING SALAD!",
+         "THE SALMON IS RAW AND THE CHICKEN IS AS DRY AS A FUCKING CAMEL'S ASS IN A FUCKING DESERT STORM!",
+         "THIS CHICKEN IS SO UNCOOKED THAT A SKILLED VET COULD STILL SAVE HIM!",
+         "FORECAST FOR TOMORROW? 100% CHANCE OF TEARS!",
+         "THIS FISH IS SO FROZEN THAT IT IS STILL SINGING 'LET IT GO'!",
+         "RAW CHICKEN AGAIN!",
+         "THIS LOOKS LIKE A SLICED UP BASEBALL GLOVE!",
+         "PUKE DIP!",
+         "CRUSTED DOGS TURD!",
+         "HORSE SHIT!",
+         "SCRAMBLED VOMIT! IS THAT AFTER YOU THREW IT UP?!",
+         "THIS LOOKS LIKE MY GREAT GRANDADS LEFT FOOT!",
+         "PIZZ A CRAP!",
+         "CHICKEN SHITTA MASALA!",
+         "THAT'S LIMPER THAN MY GRANDAD'S DICK!",
+         "THIS LOOKS LIKE THE INSIDE OF MY GRANDAD'S COLOSTOMY BAG!",
+         "THE CHICKEN IS PINKER THAN YOUR FUCKING LIPSTICK!",
+         "IT LOOKS LIKE SOMETHING OUT OF THE FUCKING SEWER!",
+         "CONGRATULATIONS... ON THE WORST DISH IN THIS COMPETITION SO FAR!",
+         "LOOKS LIKE A SEAGULL SPLATTERED ALL OVER YOUR PORK!",
+         "DREADFUL!",
+         "WOW! THIS LOOKS LIKE A FUCKED UP VERSION OF A SCIENCE LAB!",
+         "YOU FUCKING DONUT, OF COURSE YOU DON'T MICROWAVE SALAD!",
+         "CHITLINS? SHITLINS!",
+         "THAT'S NOT A CRAB CAKE, IT'S CRAP CAKE! BECAUSE IF I EAT ANYMORE, I'LL BE BUSY CRAPPING FOR THE NEXT HUNDRED AND FIVE YEARS!",
+         ];
 
-    function showPopup() {
+     function showPopup() {
+        console.log("Popup function is called!"); // Check if function is triggered
         const popup = document.createElement("div");
         popup.className = "popup";
         popup.textContent = quotes[Math.floor(Math.random() * quotes.length)];
@@ -46,19 +203,19 @@
         // Make the popup visible
         setTimeout(() => {
             popup.style.opacity = 1;
-        }, 100);
 
-        // Remove the popup after a few seconds
-        setTimeout(() => {
-            popup.style.opacity = 0;
+            // Remove the popup after a few seconds
             setTimeout(() => {
-                document.body.removeChild(popup);
-            }, 500);
-        }, 3000);
+                popup.style.opacity = 0;
+                setTimeout(() => {
+                    document.body.removeChild(popup);
+                }, 500);
+            }, 3000);
+        }, 10);
     }
 
     // Randomly trigger popups every few seconds
-    setInterval(showPopup, Math.random() * 10000 + 5000); // Between 5-15 seconds
+    setInterval(showPopup, 3000); // Fixed interval of 3 seconds
 </script>
 
 </body>
