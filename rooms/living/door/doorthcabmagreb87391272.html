@@ -10,14 +10,55 @@
     
     <img src="https://miro.medium.com/v2/resize:fit:1280/1*LRXYjpHwOVpLGt1wT773Ng.gif" alt="Boundary"/>
     
-    <p>
-      Why are you leaving? Please... Stop...<br>
-    </p>
+    <div id="textOutput"></div>
     
-    <p class="white-text">Where do you want to go?</p>
+    <script>
+      function displayText(lines, letterSpeed = 200, defaultBreak = 2000) {
+        const textOutput = document.getElementById('textOutput');
+        let currentLine = 0;
     
-    <nav>
-        <a href="living1">Living room</a>
-    </nav>
+        function showNextLine() {
+          if (currentLine >= lines.length) return;  // Stop if no more lines
+          
+          const { text, breakTime = defaultBreak, instant = false } = lines[currentLine];
+          
+          if (instant) {
+            textOutput.innerHTML += text;  // Instantly append the HTML text
+            currentLine++; // Move to the next line immediately
+            setTimeout(showNextLine, breakTime);  // Wait for break before showing the next line
+            return;  // Stop after instant render
+          }
+          
+          let currentChar = 0;
+          textOutput.innerHTML += "<br>";  // New line before adding text
+          
+          const charInterval = setInterval(() => {
+            if (currentChar < text.length) {
+              textOutput.innerHTML += text[currentChar];  // Append each character
+              currentChar++;
+            } else {
+              clearInterval(charInterval);  // Stop once the line is fully displayed
+              currentLine++;
+              setTimeout(showNextLine, breakTime);  // Wait for the break before the next line
+            }
+          }, letterSpeed);  // Display letters one by one at specified speed
+        }
+    
+        showNextLine();  // Start showing the first line
+      }
+    
+      // Define the lines to render
+      const lines = [
+        { text: "Why are you leaving?" },
+        { text: "Please... Stop..." },
+        { text: "Don't leave me alone, or I will go insane." },
+        { text: '<p class="white-text">Where do you want to go?</p>', instant: true, breakTime: 0 },
+        { text: '<nav><a href="living1">Living room</a></nav>', instant: true }
+      ];
+    
+      // Start the text display with 5 letters per second (200ms per letter)
+      displayText(lines, 200, 2000);  // Default break of 2000ms (2 seconds) between lines
+    </script>
+
 </body>
 </html>

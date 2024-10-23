@@ -13,8 +13,8 @@
 * kitchen -->
   - pantry             --> vegasgoldenknights   --> indianajoeys18                --> patience [B-KEY 4] (patience: alone) / (lazy: insane)
   - kitchen drawer     --> gordonramsay         --> paninihead                    --> bsep [B-KEY 3] (not)
-  - oven               --> XXX                  --> XXX                           --> [B-KEY 1] (you)
-  - plant              --> XXX                  --> XXX                           --> [B INSTRUCTIONS: GRAB THE 10TH WORD OF LYRICS]
+  - oven               --> 146                  --> brain                         --> 282 [B-KEY 1] (you)
+  - plant              --> panda                --> 20300                         --> 206 [B INSTRUCTIONS: GRAB THE 10TH WORD OF LYRICS]
   - fire alarm         --> off                  --> 82506                         --> 925 [B-KEY 2] (are)
   - kitchen machine    --> (decrypt text 1)     --> (decrypt text 2)              --> decrypt text 3 [ABC INSTRUCTIONS: HOW TO COMBINE A, B, AND C]
 
@@ -32,3 +32,8 @@
 - living/green_sofa/versicolor (alternative for virginica)
 - living/fire_place/cyclotrimethylenetrinitramine (if they don't do the assignment properly)
 - kitchen/pantry/lazy (if they cheat and look at source code in indianajoeys18)
+
+* TO DO:
+- hidden key in kitchen machine
+- basement (via hidden key?)
+- reallife (final good ending room)

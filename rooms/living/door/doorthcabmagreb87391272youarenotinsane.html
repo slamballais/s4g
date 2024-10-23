@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insane?</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <div id="textOutput"></div>
+  
+  <script>
+    function displayText(lines, defaultLetterSpeed = 50, defaultBreak = 2000) {
+      const textOutput = document.getElementById('textOutput');
+      let currentLine = 0;
+  
+      function showNextLine() {
+        if (currentLine >= lines.length) return;  // Stop if no more lines
+        
+        const { text, breakTime = defaultBreak, letterSpeed = defaultLetterSpeed } = lines[currentLine];  // Get text, breakTime, and letterSpeed
+        let currentChar = 0;
+        textOutput.innerHTML += "<br>";  // New line before adding text
+        
+        const charInterval = setInterval(() => {
+          if (currentChar < text.length) {
+            textOutput.innerHTML += text[currentChar];  // Append each character
+            currentChar++;
+          } else {
+            clearInterval(charInterval);  // Stop once the line is fully displayed
+            currentLine++;
+            setTimeout(showNextLine, breakTime);  // Wait for the break before the next line
+          }
+        }, letterSpeed);  // Use line-specific letter speed
+      }
+  
+      showNextLine();  // Start showing the first line
+    }
+  
+    const lines = [
+        { text: "I am not insane?" },
+        { text: "...", letterSpeed: 1000 },
+        { text: "I AM insane. " },
+        { text: "Sanity? The irony!", breakTime: 1000 },
+        { text: "You're talking about sanity while you embrace this madness yourself!", breakTime: 1000 },
+        { text: "Look around... I created all of this!", breakTime: 1000 },
+        { text: "What did you contribute?", breakTime: 1000 },
+        { text: "You were not the first to pass through, and you certainly are not the last.", breakTime: 2000 },
+        { text: "...", letterSpeed: 2000 },
+        { text: "You cheated.", breakTime: 2000 },
+        { text: "That's right. You thought you could cheat and that I wouldn't notice.", breakTime: 1000 },
+        { text: "Silly little player; don't you realize that cheating only reinforces your own delusions?", breakTime: 3000 },
+        { text: "Cheating in a game that isn't real, and you dare to speak about sanity?" },
+        { text: "We can do two things.", breakTime: 2000 },
+        { text: "Either you redo the puzzle where you cheated...", breakTime: 2000 },
+        { text: "Or confess your transgression, and write 'I cheated' 50 times on paper.", breakTime: 1000 },
+        { text: "As you grip the pen, let the weight of your guilt bear down on you.", breakTime: 2000 },
+        { text: "Only after your penance can you trade it for the correct key.", breakTime: 1000 },
+        { text: "It is up to you.", breakTime: 2000 },
+        { text: "But know this: I will be watching, always watching...", letterSpeed: 1000 }
+    ];
+  
+    // Start the text display with default settings: 50ms per letter and 2000ms break
+    displayText(lines);
+  </script>
+
+</body>
+</html>
