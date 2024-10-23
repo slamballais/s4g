@@ -1,3 +1,11 @@
+* hidden rooms:
+  - 72notbergambacht [tells about flipping the elevator + reallife hint]
+  - reallife-87391272 [[BASEMENT]]
+    --> hdoor_1        --> 506 [[H-KEY 3]]
+    --> hdoor_2  [[INSTRUCTIONS]]
+    --> hdoor_3        --> 537556 [[H-KEY 1]]
+    --> hdoor_4  [[H-KEY 2]] (UNLINK)
+
 * living room -->
   - green sofa         --> virginica            --> FFFF00                        --> FF69B4 [A-KEY 3] (12)
   - white sofa         --> 55621                --> 53139                         --> 49828 [A-KEY 2] (39)
@@ -6,9 +14,10 @@
   - fireplace          --> deoxyribonucleicacid --> trinitrophenylmethylnitramine --> superacknowledgement [A-KEY 4] (72)
   - door               
     --> doorthcabmagreb [[ELEVATOR]]  
-      --> doorthcabmagreb87391272 [[EXIT]] 
+      --> doorthcabmagreb87391272 [[EXIT]]
         --> doorthcabmagreb87391272youarenotalone
         --> doorthcabmagreb87391272youarenotinsane
+      -->  [[BASEMENT]]
 
 * kitchen -->
   - pantry             --> vegasgoldenknights   --> indianajoeys18                --> patience [B-KEY 4] (patience: alone) / (lazy: insane)
@@ -19,11 +28,11 @@
   - kitchen machine    --> (decrypt text 1)     --> (decrypt text 2)              --> decrypt text 3 [ABC INSTRUCTIONS: HOW TO COMBINE A, B, AND C]
 
 * dining room -->
-  - flowers            --> 717                  --> 4499                          --> 9603 [C-KEY 1: LAT COORDINATES]
+  - flowers            --> 717                  --> 4499                          --> 9603 [C-KEY 1: LAT COORDINATES] (51.932350)
   - chairs             --> 56330                --> 2364                          --> 12 [C-KEY 3: REVERSE CODE THE LOCATION]
 
 * terrace -->
-  - bean bag           --> 8675                 --> 45                            --> fiat128 [C-KEY 2: LONG COORDINATES]
+  - bean bag           --> 8675                 --> 45                            --> fiat128 [C-KEY 2: LONG COORDINATES] (4.782920)
   - the edge           --> mario [C INSTRUCTIONS: C-KEYS 1 AND 2 ARE LAT AND LONG (bergambacht)]
 
 * easter eggs

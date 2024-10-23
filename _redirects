@@ -11,11 +11,14 @@
 /4499                           /rooms/dining/flowers/4499.html                             200
 /45                             /rooms/terrace/bag/45.html                                  200
 /49828                          /rooms/living/white_sofa/49828.html                         200
+/506                            /rooms/hidden/506.html                                      200
 /53139                          /rooms/living/white_sofa/53139.html                         200
+/537556                         /rooms/hidden/537556.html                                   200
 /55621                          /rooms/living/white_sofa/55621.html                         200
 /56330                          /rooms/dining/chairs/56330.html                             200
 /69                             /rooms/easter/69.html                                       200
 /717                            /rooms/dining/flowers/717.html                              200
+/72notbergambacht               /rooms/hidden/72notbergambacht.html                         200
 /82506                          /rooms/kitchen/alarm/82506.html                             200
 /8675                           /rooms/terrace/bag/8675.html                                200
 /925                            /rooms/kitchen/alarm/925.html                               200
@@ -50,6 +53,10 @@
 /green_sofa                     /rooms/living/green_sofa/green_sofa.html                    200
 /gryffindor274                  /rooms/living/lamp/gryffindor274.html                       200
 /hallway                        /rooms/easter/hallway.html                                  200
+/hdoor_1                        /rooms/hidden/hdoor_1.html                                  200
+/hdoor_2                        /rooms/hidden/hdoor_2.html                                  200
+/hdoor_3                        /rooms/hidden/hdoor_3.html                                  200
+/hdoor_4                        /rooms/hidden/hdoor_4.html                                  200
 /help                           /rooms/easter/help.html                                     200
 /hint                           /rooms/easter/hint.html                                     200
 /indianajoeys18                 /rooms/kitchen/pantry/indianajoeys18.html                   200
@@ -82,6 +89,7 @@
 /python                         /rooms/easter/pyton.html                                    200
 /p-value                        /rooms/easter/p-value.html                                  200
 /r                              /rooms/easter/r.html                                        200
+/reallife-87391272              /rooms/hidden/reallife-87391272.html                        200
 /regression                     /rooms/easter/regression.html                               200
 /ring                           /rooms/living/tv/ring.html                                  200
 /roof                           /rooms/easter/roof.html                                     200
@@ -101,6 +109,7 @@
 /virginica                      /rooms/living/green_sofa/virginica.html                     200
 /url                            https://www.nytimes.com/games/connections                   301
 /vegasgoldenknights             /rooms/kitchen/pantry/vegasgoldenknights.html               200
+/warp.png                       /rooms/hidden/warp.png                                      200
 /word                           https://www.nytimes.com/games/wordle/index.html             301
 /white_sofa                     /rooms/living/white_sofa/white_sofa.html                    200
 /xkcd                           /rooms/easter/xkcd.html                                     200
