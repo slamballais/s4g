@@ -1,22 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The edge</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The edge</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    #countdown {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    #message {
+      margin-top: 10px;
+    }
+    #startButton {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-    <p>
-        The edge.<br>
-    </p>
+  
+  <p>
+    As you stand on the edge, you suddenly realise that this is not real.<br>
+    None of it is real.<br>
+    So, why does he allow you to walk to the edge of the building?<br>
+    Wouldn't that be dangerous?<br>
+    And so, you decide to jump... because if you can jump, it must be part of the game...<br>
+    As soon as you show intend to jump, a platform appears.<br>
+    It floats through the air, according to a fixed trajectory.<br>
+    Every 10 seconds exactly it passes right in front of you.<br>
+    If you time it right, you may be able to jump on the platform...<br>
+  </p>
+  <div>
+    <button id="startButton" onclick="startGame()">Start</button>
+    <p id="countdown">10.0</p>
+    <button id="stopButton" onclick="stopTimer()" disabled>Press Exactly at 0.0!</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    let countdownElement = document.getElementById("countdown");
+    let messageElement = document.getElementById("message");
+    let stopButton = document.getElementById("stopButton");
+    let startButton = document.getElementById("startButton");
+    let countdown = 10.0;
+    let intervalId;
+    let gameStarted = false;
+
+    function startGame() {
+      countdown = 10.0;
+      countdownElement.innerHTML = countdown.toFixed(1);
+      countdownElement.style.visibility = 'visible';
+      stopButton.disabled = false;
+      messageElement.innerHTML = "";
+      startButton.innerHTML = "Reset";
+      gameStarted = true;
+
+      intervalId = setInterval(function() {
+        countdown -= 0.1;
+        if (countdown <= 0) {
+          countdown = 0;
+          clearInterval(intervalId);
+        }
+
+        if (countdown > 8) {
+          countdownElement.innerHTML = countdown.toFixed(1);
+        } else {
+          countdownElement.style.visibility = 'hidden';
+        }
+      }, 100);
+    }
+
+    function stopTimer() {
+      if (!gameStarted) return;
+
+      clearInterval(intervalId);
+      stopButton.disabled = true;
+      const roundedTime = countdown.toFixed(1);
+
+      if (roundedTime === "0.0") {
+        fetchSpecialMessage();
+      } else {
+        messageElement.innerHTML = `Too ${roundedTime > 0 ? "early" : "late"}! Try again! You stopped at ${roundedTime}.`;
+      }
+
+      startButton.style.display = 'inline';
+    }
     
-    <img src=xx alt="The edge" />
+    function fetchSpecialMessage() {
+      fetch('cold.txt')
+        .then(response => response.text())
+        .then(text => {
+          document.getElementById("message").innerHTML = text;
+        })
+        .catch(error => {
+          document.getElementById("message").innerHTML = "You win! Special message could not be loaded.";
+        });
+    }
+
+    function resetGame() {
+      clearInterval(intervalId);
+      stopButton.disabled = true;
+      startButton.innerHTML = "Start";
+      countdownElement.innerHTML = "10.0";
+    }
+  </script>
+  
+  <p class="white-text">Where do you want to go?</p>
     
-    <p class="white-text">Where do you want to go?</p>
-    
-    <nav>
-        <a href="terrace">Terrace</a><br>
-    </nav>
+  <nav>
+      <a href="terrace">Terrace</a><br>
+  </nav>
 </body>
 </html>

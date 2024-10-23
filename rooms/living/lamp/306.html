@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>306</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    #gameArea {
+      margin: 20px;
+    }
+    #message {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    #computerMove {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Perfect... A new game...<br>
+    There are 20 items in a stack.<br>
+    In your turn, you can grab 1 or 2 items.<br>
+    Then, the computer will grab 1 or 2 items.<br>
+    This keeps repeating, until all items have been grabbed.<br>
+    Your goal is to grab the last item.<br>
+    If you do this, the hidden word will be revealed.
+  </p>
+  
+  <div id="gameArea">
+    <p>Items remaining: <span id="itemsLeft">20</span></p>
+    <label for="playerMove">Your move (1-2): </label>
+    <input type="number" id="playerMove" min="1" max="2">
+    <button onclick="playerTurn()">Take Items</button>
+
+    <p id="computerMove"></p>
+    <div id="message"></div>
+    <button id="resetButton" onclick="resetGame()">Reset</button>
+  </div>
+
+  <script>
+    let itemsLeft = 20;
+
+    function playerTurn() {
+      const playerMove = parseInt(document.getElementById("playerMove").value);
+      if (isNaN(playerMove) || playerMove < 1 || playerMove > 2) {
+        alert("Please select a valid number between 1 and 2.");
+        return;
+      }
+
+      // Player takes items
+      itemsLeft -= playerMove;
+      updateItems();
+
+      if (itemsLeft <= 0) {
+        endGame(true); // Player wins
+        return;
+      }
+
+      // Computer's turn
+      setTimeout(computerTurn, 1000);
+    }
+
+    function computerTurn() {
+      let computerMove = 1; // Default move
+
+      // Optimal strategy: Leave a multiple of 3
+      if (itemsLeft % 3 !== 0) {
+        computerMove = itemsLeft % 3; // Take 1 or 2 items to leave multiple of 3
+      } else {
+        // If it's already a multiple of 3, randomly take 1 or 2
+        computerMove = Math.floor(Math.random() * 2) + 1;
+      }
+
+      itemsLeft -= computerMove;
+      document.getElementById("computerMove").innerText = `Computer took ${computerMove} items.`;
+      updateItems();
+
+      if (itemsLeft <= 0) {
+        endGame(false); // Computer wins
+      }
+    }
+
+    function updateItems() {
+      document.getElementById("itemsLeft").innerText = itemsLeft;
+    }
+
+    function endGame(playerWins) {
+      const message = document.getElementById("message");
+
+      if (playerWins) {
+        fetchSpecialMessage();
+      } else {
+        message.innerHTML = "Computer grabbed the last item. You lose!";
+      }
+    }
+
+    function resetGame() {
+      itemsLeft = 20;
+      updateItems();
+      document.getElementById("message").innerHTML = "";
+      document.getElementById("computerMove").innerText = "";
+    }
+
+    function fetchSpecialMessage() {
+      fetch('nim.txt')
+        .then(response => response.text())
+        .then(text => {
+          document.getElementById("message").innerHTML = text;
+        })
+        .catch(error => {
+          document.getElementById("message").innerHTML = "You win! Special message could not be loaded.";
+        });
+    }
+  </script>
+  
+  <p class="white-text">Where do you want to go?</p>
+    
+  <nav>
+      <a href="living1">Living room</a>
+  </nav>
+</body>
+</html>

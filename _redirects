@@ -2,14 +2,20 @@
 /13493                          /rooms/living/tv/13493.html                                 200
 /188                            /rooms/living/tv/188.html                                   200
 /2364                           /rooms/dining/chairs/2364.html                              200
+/306                            /rooms/living/lamp/306.html                                 200
 /420                            /rooms/easter/420.html                                      200
+/4499                           /rooms/dining/flowers/4499.html                             200
 /45                             /rooms/terrace/bag/45.html                                  200
 /49828                          /rooms/living/white_sofa/49828.html                         200
 /53139                          /rooms/living/white_sofa/53139.html                         200
 /55621                          /rooms/living/white_sofa/55621.html                         200
 /56330                          /rooms/dining/chairs/56330.html                             200
 /69                             /rooms/easter/69.html                                       200
+/717                            /rooms/dining/flowers/717.html                              200
+/82506                          /rooms/kitchen/alarm/82506.html                             200
 /8675                           /rooms/terrace/bag/8675.html                                200
+/925                            /rooms/kitchen/alarm/925.html                               200
+/9603                           /rooms/dining/flowers/9603.html                             200
 /bean_bag                       /rooms/terrace/bag/bean_bag.html                            200
 /bedroom                        https://jcw87.github.io/c2-sans-fight/                      301
 /bidoof                         /rooms/easter/bidoof.html                                   200
@@ -19,6 +25,9 @@
 /cyclotrimethylenetrinitramine  /rooms/living/fireplace/cyclotrimethylenetrinitramine.html  200
 /deoxyribonucleicacid           /rooms/living/fireplace/deoxyribonucleicacid.html           200
 /dining_room                    /rooms/dining_room.html                                     200
+/door                           /rooms/living/door/door.html                                200
+/doorthcabmagreb                /rooms/living/door/doorthcabmagreb.html                     200
+/doorthcabmagreb87391272        /rooms/living/door/doorthcabmagreb87391272.html             200
 /drawer                         /rooms/kitchen/drawer/drawer.html                           200
 /edge                           /rooms/terrace/edge/edge.html                               200
 /end                            /rooms/easter/end.html                                      200
@@ -30,6 +39,7 @@
 /gis                            /rooms/easter/gis.html                                      200
 /gordonramsay                   /rooms/kitchen/drawer/gordonramsay.html                     200
 /green_sofa                     /rooms/living/green_sofa/green_sofa.html                    200
+/gryffindor274                  /rooms/living/lamp/gryffindor274.html                       200
 /hallway                        /rooms/easter/hallway.html                                  200
 /help                           /rooms/easter/help.html                                     200
 /hint                           /rooms/easter/hint.html                                     200
@@ -39,7 +49,6 @@
 /kualalumpur                    /rooms/easter/kualalumpur                                   200
 /lazy                           /rooms/kitchen/pantry/lazy.html                             200
 /link                           https://www.nytimes.com/games/connections                   301
-/living_door                    /rooms/living/door/living_door.html                         200
 /living_lamp                    /rooms/living/lamp/living_lamp.html                         200
 /living_start                   /rooms/living_start.html                                    200
 /living_tv                      /rooms/living/tv/living_tv.html                             200
@@ -49,6 +58,8 @@
 /living4                        /rooms/easter/living4.html                                  200
 /living5                        /rooms/easter/living5.html                                  200
 /map                            /rooms/easter/map.html                                      200
+/mario                          /rooms/terrace/edge/mario.html                              200
+/merge                          /rooms/living/lamp/merge.html                               200
 /off                            /rooms/kitchen/alarm/off.html                               200
 /on                             /rooms/kitchen/alarm/fire_alarm.html                        200
 /oven                           /rooms/kitchen/oven/oven.html                               200
