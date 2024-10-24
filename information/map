@@ -1,9 +1,9 @@
 * hidden rooms:
   - 72notbergambacht [tells about flipping the elevator + reallife hint]
   - reallife-87391272 [[BASEMENT]]
-    --> hdoor_1        --> 506 [[H-KEY 3]]
+    --> hdoor_1        --> 506 [[H-KEY 3]] (_BASEMENT)
     --> hdoor_2  [[INSTRUCTIONS]]
-    --> hdoor_3        --> 537556 [[H-KEY 1]]
+    --> hdoor_3        --> 537556 [[H-KEY 1]] (DO_)
     --> hdoor_4  [[H-KEY 2]] (UNLINK)
 
 * living room -->
@@ -17,6 +17,7 @@
       --> doorthcabmagreb87391272 [[EXIT]]
         --> doorthcabmagreb87391272youarenotalone
         --> doorthcabmagreb87391272youarenotinsane
+        --> doorthcabmagreb87391272youarenotvoid
       -->  [[BASEMENT]]
 
 * kitchen -->

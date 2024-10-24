@@ -42,30 +42,30 @@
 
   <script>
     let itemsLeft = 20;
-
+  
     function playerTurn() {
       const playerMove = parseInt(document.getElementById("playerMove").value);
       if (isNaN(playerMove) || playerMove < 1 || playerMove > 2) {
         alert("Please select a valid number between 1 and 2.");
         return;
       }
-
+  
       // Player takes items
       itemsLeft -= playerMove;
       updateItems();
-
+  
       if (itemsLeft <= 0) {
         endGame(true); // Player wins
         return;
       }
-
+  
       // Computer's turn
       setTimeout(computerTurn, 1000);
     }
-
+  
     function computerTurn() {
       let computerMove = 1; // Default move
-
+  
       // Optimal strategy: Leave a multiple of 3
       if (itemsLeft % 3 !== 0) {
         computerMove = itemsLeft % 3; // Take 1 or 2 items to leave multiple of 3
@@ -73,37 +73,45 @@
         // If it's already a multiple of 3, randomly take 1 or 2
         computerMove = Math.floor(Math.random() * 2) + 1;
       }
-
+  
       itemsLeft -= computerMove;
       document.getElementById("computerMove").innerText = `Computer took ${computerMove} items.`;
       updateItems();
-
+  
       if (itemsLeft <= 0) {
         endGame(false); // Computer wins
       }
     }
-
+  
     function updateItems() {
       document.getElementById("itemsLeft").innerText = itemsLeft;
     }
-
+  
     function endGame(playerWins) {
       const message = document.getElementById("message");
-
+  
+      // Disable input and button
+      document.getElementById("playerMove").disabled = true;
+      document.querySelector('button[onclick="playerTurn()"]').disabled = true;
+  
       if (playerWins) {
         fetchSpecialMessage();
       } else {
         message.innerHTML = "Computer grabbed the last item. You lose!";
       }
     }
-
+  
     function resetGame() {
       itemsLeft = 20;
       updateItems();
       document.getElementById("message").innerHTML = "";
       document.getElementById("computerMove").innerText = "";
+  
+      // Re-enable input and button
+      document.getElementById("playerMove").disabled = false;
+      document.querySelector('button[onclick="playerTurn()"]').disabled = false;
     }
-
+  
     function fetchSpecialMessage() {
       fetch('nim.txt')
         .then(response => response.text())
@@ -115,6 +123,7 @@
         });
     }
   </script>
+
   
   <p class="white-text">Where do you want to go?</p>
     
