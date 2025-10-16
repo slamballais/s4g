@@ -41,6 +41,42 @@ nav a:hover {
     border-top: 1px dashed white;
 }
 
+.puzzle-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* space between puzzles */
+}
+
+.puzzle {
+  position: relative;
+  display: inline-block;
+  color: #0055cc;           /* link color */
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 6em;       /* reserve space for stars */
+}
+
+.puzzle::after {
+  content: "★★★★★";         /* 5 stars always shown */
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  color: #ccc;              /* empty star color */
+  letter-spacing: 1px;
+}
+
+.puzzle::before {
+  content: "★★★★★";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  color: gold;              /* filled star color */
+  letter-spacing: 1px;
+  width: calc(attr(data-stars number) * 20%);
+  overflow: hidden;
+}
 
 
         
