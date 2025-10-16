@@ -33,81 +33,103 @@
     If you time it right, you may be able to jump on the platform...<br>
   </p>
   <div>
-    <button id="startButton" onclick="startGame()">Start</button>
+    <button id="startButton">Start</button>
     <p id="countdown">10.0</p>
-    <button id="stopButton" onclick="stopTimer()" disabled>Press Exactly at 0.0!</button>
+    <button id="stopButton" disabled>Press Exactly at 0.0!</button>
     <p id="message"></p>
   </div>
 
-  <script>
-    let countdownElement = document.getElementById("countdown");
-    let messageElement = document.getElementById("message");
-    let stopButton = document.getElementById("stopButton");
-    let startButton = document.getElementById("startButton");
-    let countdown = 10.0;
-    let intervalId;
-    let gameStarted = false;
-  
-    function startGame() {
-      countdown = 10.0;
-      countdownElement.innerHTML = countdown.toFixed(2);  // Display 2 decimal places
-      countdownElement.style.visibility = 'visible';  // Show timer at start
-      stopButton.disabled = false;
-      messageElement.innerHTML = "";
-      startButton.innerHTML = "Reset";
-      gameStarted = true;
-  
-      intervalId = setInterval(function() {
-        countdown -= 0.01;  // Decrease by 0.01 each time, even going into negatives
-        
-        if (countdown > 8) {
-          countdownElement.innerHTML = countdown.toFixed(2);  // Update the display while it's visible
-        } else if (countdown <= 8) {
-          countdownElement.style.visibility = 'hidden';  // Hide the countdown when it hits 8 seconds
-        }
-      }, 10);  // Updates every 10 ms
+<script>
+  const countdownElement = document.getElementById("countdown");
+  const messageElement = document.getElementById("message");
+  const stopButton = document.getElementById("stopButton");
+  const startButton = document.getElementById("startButton");
+
+  let startTime = null;
+  let duration = 10.0; // seconds
+  let running = false;
+  let rafId = null;
+
+  function updateTimer() {
+    const elapsed = (performance.now() - startTime) / 1000;
+    const remaining = Math.max(0, duration - elapsed);
+
+    if (remaining > 8) {
+      countdownElement.style.visibility = "visible";
+      countdownElement.textContent = remaining.toFixed(2);
+    } else {
+      countdownElement.style.visibility = "hidden";
     }
-  
-    function stopTimer() {
-      if (!gameStarted) return;
-  
-      clearInterval(intervalId);
-      stopButton.disabled = true;
-      const roundedTime = countdown.toFixed(2);  // Round to 2 decimal places
-  
-      if (countdown >= 0 && countdown <= 0.01) {
-        // If player stops on time
-        fetchSpecialMessage();
-      } else if (countdown < 0) {
-        // If player is too late, display how late they were (multiply by -1)
-        messageElement.innerHTML = `Too late by ${(-countdown).toFixed(2)} seconds! Try again!`;
-      } else {
-        // If player is too early
-        messageElement.innerHTML = `Too early by ${roundedTime} seconds! Try again!`;
-      }
-  
-      startButton.style.display = 'inline';
+
+    // When time runs out, just freeze at 0.00 — do NOT disable the stop button
+    if (remaining > 0) {
+      rafId = requestAnimationFrame(updateTimer);
+    } else {
+      countdownElement.textContent = "0.00";
+      running = false;
     }
-    
-    function fetchSpecialMessage() {
-      fetch('cold.txt')
-        .then(response => response.text())
-        .then(text => {
-          document.getElementById("message").innerHTML = text;
-        })
-        .catch(error => {
-          document.getElementById("message").innerHTML = "You win! Special message could not be loaded.";
-        });
+  }
+
+  function startGame() {
+    if (running) {
+      cancelAnimationFrame(rafId);
+      resetGame();
+      return;
     }
-  
-    function resetGame() {
-      clearInterval(intervalId);
-      stopButton.disabled = true;
-      startButton.innerHTML = "Start";
-      countdownElement.innerHTML = "10.00";  // Reset countdown display
-      countdownElement.style.visibility = 'visible';  // Make sure timer is visible for the next game
+
+    running = true;
+    messageElement.textContent = "";
+    startButton.textContent = "Reset";
+    stopButton.disabled = false;
+
+    startTime = performance.now();
+    countdownElement.textContent = duration.toFixed(2);
+    countdownElement.style.visibility = "visible";
+
+    rafId = requestAnimationFrame(updateTimer);
+  }
+
+  function stopTimer() {
+    if (!startTime) return;
+
+    const elapsed = (performance.now() - startTime) / 1000;
+    const diff = duration - elapsed;
+
+    cancelAnimationFrame(rafId);
+    running = false;
+    stopButton.disabled = true;
+
+    if (Math.abs(diff) < 0.01) {
+      fetchSpecialMessage();
+    } else if (diff < 0) {
+      messageElement.textContent = `Too late by ${(-diff).toFixed(2)} seconds! Try again!`;
+    } else {
+      messageElement.textContent = `Too early by ${diff.toFixed(2)} seconds! Try again!`;
     }
-  </script>
+  }
+
+  function fetchSpecialMessage() {
+    fetch("cold.txt")
+      .then((res) => res.text())
+      .then((text) => (messageElement.textContent = text))
+      .catch(() => (messageElement.textContent = "You win! (Message could not be loaded)"));
+  }
+
+  function resetGame() {
+    cancelAnimationFrame(rafId);
+    running = false;
+    countdownElement.textContent = "10.00";
+    countdownElement.style.visibility = "visible";
+    startButton.textContent = "Start";
+    messageElement.textContent = "";
+    stopButton.disabled = true;
+    startTime = null;
+  }
+
+  startButton.addEventListener("click", startGame);
+  stopButton.addEventListener("click", stopTimer);
+</script>
+
 
   <p class="white-text">Where do you want to go?</p>
     
