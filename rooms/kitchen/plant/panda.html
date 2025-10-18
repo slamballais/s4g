@@ -12,26 +12,29 @@
     
     <p>
         Time to do some archery.<br>
-        Each round consists of 3 arrows.<br>
+        You are going to shoot 30 arrows.<br>
         You can score by being as close to the center as possible:<br>
-        * ≤ 10 cm: 100 points<br>
-        * ≤ 20 cm: 80 points<br>
-        * ≤ 30 cm: 60 points<br>
-        * ≤ 40 cm: 40 points<br>
-        * > 40 cm: no points<br><br>
+        * ≤ 10 cm: 10000 points<br>
+        * ≤ 20 cm: 4000 points<br>
+        * ≤ 30 cm: 260 points<br>
+        * ≤ 40 cm: 80 points<br>
+        * > 40 cm: 10 points<br><br>
         
-        Load the file `archery_match.rds`.<br>
-        It contains a list, where each element is a player.<br>
-        Each player gets to play 30 rounds, so each element contains a list of length 30.<br>
-        Each of THOSE elements contains a list of three vectors, one per arrow.<br>
-        Each vector contains the X and Y coordinates of where the arrow landed (0,0 being the center of the board).<br>
-        So, to grab the X-Y coordinates of the 2nd arrow of the 18th round of player 7, we do archery[[7]][[18]][[2]].<br>
-        For each round, calculate the scores per arrow, and sum them together.<br>
-        For each player, find the round with the highest score.<br>
-        To get the hidden word, sum up all the highest scores (1 per player).
+        Yeah... I don't know who came up with that score scheme, but anyway.<br>
+        And... there we go... Good luck!<br><br>
+        
+        Wow... ok... you realise that the target is way over there, right?<br>
+        Hmm...<br>
+        Well, some people just weren't born for this, I guess.<br><br>
+        
+        Alright, I stored all your arrow locations in the file `archery_match.rds`.<br>
+        I basically tracked all the X and Y positions of your arrows in centimeters, where X=0 and Y=0 is the center.<br>
+        So your first arrow was 5.4 cm centimeter to the right, and 48.8 centimeter above the target.<br>
+        Not even close, LOL! <br>
+        Anyway, your goal is to calculate the distance of each arrow to the center, which gives you the number of points.<br>
+        From there, calculate your total number of points.<br>
+        The total score is the hidden word.
     </p>
-    
-    
     
     <p class="white-text">Where do you want to go?</p>
     

@@ -21,7 +21,7 @@
 /72notbergambacht               /rooms/hidden/72notbergambacht.html                         200
 /82506                          /rooms/kitchen/alarm/82506.html                             200
 /8675                           /rooms/terrace/bag/8675.html                                200
-/925                            /rooms/kitchen/alarm/925.html                               200
+/9075                           /rooms/kitchen/alarm/9075.html                              200
 /9603                           /rooms/dining/flowers/9603.html                             200
 /always.png                     /rooms/living/door/always.png                               200
 /archery_board.jpg              /rooms/kitchen/plant/archery_board.jpg                      200
@@ -50,6 +50,7 @@
 /FF69B4                         /rooms/living/green_sofa/FF69B4.html                        200
 /FFFF00                         /rooms/living/green_sofa/FFFF00.html                        200
 /fiat128                        /rooms/terrace/bag/fiat128.html                             200
+/Fiat128                        /rooms/terrace/bag/fiat128.html                             200
 /fireplace                      /rooms/living/fireplace/fireplace.html                      200
 /flowers                        /rooms/dining/flowers/flowers.html                          200
 /gis                            /rooms/easter/gis.html                                      200
@@ -63,7 +64,6 @@
 /hdoor_4                        /rooms/hidden/hdoor_4.html                                  200
 /help                           /rooms/easter/help.html                                     200
 /hint                           /rooms/easter/hint.html                                     200
-/indianajoeys18                 /rooms/kitchen/pantry/indianajoeys18.html                   200
 /kitchen                        /rooms/kitchen.html                                         200
 /kitchen_machine                /rooms/kitchen/machine/kitchen_machine.html                 200
 /kualalumpur                    /rooms/easter/kualalumpur                                   200
@@ -79,6 +79,7 @@
 /living5                        /rooms/easter/living5.html                                  200
 /map                            /rooms/easter/map.html                                      200
 /mario                          /rooms/terrace/edge/mario.html                              200
+/marylandmarines18              /rooms/kitchen/pantry/marylandmarines18.html                200
 /merge                          /rooms/living/lamp/merge.html                               200
 /nim.txt                        /rooms/living/lamp/nim.txt                                  200
 /off                            /rooms/kitchen/alarm/off.html                               200
@@ -88,9 +89,10 @@
 /paninihead                     /rooms/kitchen/drawer/paninihead.html                       200
 /pantry                         /rooms/kitchen/pantry/pantry.html                           200
 /password                       https://neal.fun/password-game/                             301
+/patience                       /rooms/kitchen/pantry/patience.html                         200
 /plant                          /rooms/kitchen/plant/plant.html                             200
 /pokedex                        /rooms/easter/pokedex.html                                  200
-/python                         /rooms/easter/python.html                                    200
+/python                         /rooms/easter/python.html                                   200
 /p-value                        /rooms/easter/p-value.html                                  200
 /r                              /rooms/easter/r.html                                        200
 /reallife-87391272              /rooms/hidden/reallife-87391272.html                        200
