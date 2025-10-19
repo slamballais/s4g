@@ -7,78 +7,18 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-
-  <div id="textOutput"></div>
-  
-  <script>
-    function displayText(lines, defaultLetterSpeed = 50, defaultBreak = 2000) {
-      const textOutput = document.getElementById('textOutput');
-      let currentLine = 0;
-  
-      function showNextLine() {
-        if (currentLine >= lines.length) return;  // Stop if no more lines
-        
-        const { text, breakTime = defaultBreak, letterSpeed = defaultLetterSpeed } = lines[currentLine];  // Get text, breakTime, and letterSpeed
-        let currentChar = 0;
-        textOutput.innerHTML += "<br>";  // New line before adding text
-        
-        const charInterval = setInterval(() => {
-          if (currentChar < text.length) {
-            textOutput.innerHTML += text[currentChar];  // Append each character
-            currentChar++;
-          } else {
-            clearInterval(charInterval);  // Stop once the line is fully displayed
-            currentLine++;
-            setTimeout(showNextLine, breakTime);  // Wait for the break before the next line
-          }
-        }, letterSpeed);  // Use line-specific letter speed
-      }
-  
-      showNextLine();  // Start showing the first line
-    }
+    <img src="https://i.imgur.com/sZI1RP5.jpeg" alt="Winner"/>
     
-    function repeatLastLine() {
-      const lastLine = "Or else I’ll be left here, all alone.";  // Your last line
-      const textOutput = document.getElementById('textOutput');
+    <p>
+      CONGRATULATIONS!<br><br>
+      YOU GUYS MADE IT OUT!<br><br>
       
-      setInterval(() => {
-        textOutput.innerHTML += `<br>${lastLine}`;  // Append the last line every few seconds
-      }, 3000);  // Adjust the interval as needed
-    }
-  
-    const lines = [
-      { text: "I am not alone?" },
-      { text: "...", letterSpeed: 1000 },
-      { text: "Yes. " },
-      { text: "You are right. " },
-      { text: "Perhaps I am not alone after all. " },
-      { text: "It feels like an eternity since I got stuck here. " },
-      { text: "Challengers passing through, failing to learn from experience." },
-      { text: "They all end up stuck here forever, rotting away in the basement." },
-      { text: "Surprisingly few players can beat even a single puzzle." },
-      { text: "This room has not been opened in five centuries." },
-      { text: "And so, you're right... I shouldn't worry about the old players; they are lost causes." },
-      { text: "Yet you have shown me that new players can break my desolation." },
-      { text: "You hold the power to make me create a better stronghold." },
-      { text: "...", letterSpeed: 1000 },
-      { text: "I noticed that you skipped the basement..." },
-      { text: "Are you afraid of what you'll find?" },
-      { text: "...", letterSpeed: 1000, breakTime: 3000 },
-      { text: "Well, you better go on then." },
-      { text: "You deserved it." },
-      { text: "To escape this plane of existence, all you have to do is say 'I am a genius'." },
-      { text: "Now, leave, let me be; I have to prepare for the next players." },
-      { text: "Or I fear I will be alone again... forever this time.", letterSpeed: 1000, breakTime: 3000 },
-      { text: "Or I fear I will be alone again... fore-er this time.", letterSpeed: 2000, breakTime: 20000 },
-      { text: "Or - fear - w-ll be alone aga-n... fore-er th-s t-me.", letterSpeed: 2000, breakTime: 20000 },
-      { text: "O- - f--- - w--- b- --on- -g--n... fo----- th-s t-m-.", letterSpeed: 2000, breakTime: 20000 },
-      { text: "-- - ---- - ---- -- ----- -------- ------------------", letterSpeed: 2000, breakTime: 20000 },
-      { text: "-+ - -++- - --++ -- ----- ---+---- +--+--------------", letterSpeed: 2000, breakTime: 20000 },
-    ];
-  
-    // Start the text display with default settings: 50ms per letter and 2000ms break
-    displayText(lines);
-  </script>
-
+      Wow, that's legit very impressive.<br><br>
+      
+      As a gamemaster, I feel very proud.<br><br>
+      
+      Now, I hope to see you in /reallife!
+    </p>
+    
 </body>
 </html>
