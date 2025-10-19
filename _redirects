@@ -40,9 +40,12 @@
 /door                           /rooms/living/door/door.html                                200
 /doorthcabmagreb                /rooms/living/door/doorthcabmagreb.html                     200
 /doorthcabmagreb87391272        /rooms/living/door/doorthcabmagreb87391272.html             200
-/doorthcabmagreb87391272youarenotalone    /rooms/living/door/doorthcabmagreb87391272youarenotalone.html   200
-/doorthcabmagreb87391272youarenotinsane   /rooms/living/door/doorthcabmagreb87391272youarenotinsane.html  200
-/doorthcabmagreb87391272youarenotvoid     /rooms/living/door/doorthcabmagreb87391272youarenotvoid.html    200
+/doorthcabmagreb87391272youarenotalone         /rooms/living/door/doorthcabmagreb87391272youarenotalone.html         200
+/doorthcabmagreb87391272youarenotinsane        /rooms/living/door/doorthcabmagreb87391272youarenotinsane.html        200
+/doorthcabmagreb87391272youarenotliving1       /rooms/living/door/doorthcabmagreb87391272youarenotliving1.html       200
+/doorthcabmagreb87391272youarenotliving_start  /rooms/living/door/doorthcabmagreb87391272youarenotliving_start.html  200
+/doorthcabmagreb87391272youarenotlivingstart   /rooms/living/door/doorthcabmagreb87391272youarenotliving_start.html  200
+/doorthcabmagreb87391272youarenotvoid          /rooms/living/door/doorthcabmagreb87391272youarenotvoid.html          200
 /drawer                         /rooms/kitchen/drawer/drawer.html                           200
 /edge                           /rooms/terrace/edge/edge.html                               200
 /end                            /rooms/easter/end.html                                      200
