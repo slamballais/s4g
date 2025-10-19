@@ -47,6 +47,7 @@
 /drawer                         /rooms/kitchen/drawer/drawer.html                           200
 /edge                           /rooms/terrace/edge/edge.html                               200
 /end                            /rooms/easter/end.html                                      200
+/example                        /rooms/easter/example.html                                  200
 /FF69B4                         /rooms/living/green_sofa/FF69B4.html                        200
 /FFFF00                         /rooms/living/green_sofa/FFFF00.html                        200
 /fiat128                        /rooms/terrace/bag/fiat128.html                             200
@@ -100,6 +101,7 @@
 /ring                           /rooms/living/tv/ring.html                                  200
 /roof                           /rooms/easter/roof.html                                     200
 /rules                          /rooms/easter/rules.html                                    200
+/rulebook                       /rooms/terrace/bag/rulebook.html                            200
 /sander                         /rooms/easter/sanderlamballais.html                         200
 /sanderlamballais               /rooms/easter/sanderlamballais.html                         200
 /secretMessage.txt              /rooms/kitchen/pantry/secretMessage.txt                     200
@@ -120,3 +122,4 @@
 /word                           https://www.nytimes.com/games/wordle/index.html             301
 /white_sofa                     /rooms/living/white_sofa/white_sofa.html                    200
 /xkcd                           /rooms/easter/xkcd.html                                     200
+/youareararegem                 /rooms/terrace/rulebook/youareararegem.html                 200
